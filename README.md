@@ -1,4 +1,4 @@
-Rock — Paper — Scissors (HTML / CSS / JS)
+Rock — Paper — Scissors Game (HTML / CSS / JS)
 
 Simple browser game where a user plays Rock, Paper, Scissors against the computer. The computer randomly chooses its move; the user clicks one of three images (rock / paper / scissors). A live scoreboard shows User and Computer scores and displays the round result.
 
@@ -69,24 +69,6 @@ Display round result message.
 
 Increment relevant score and update scoreboard.
 
-Optional: add a reset button to zero scores.
-
-Example JavaScript snippet (core)
-const choices = ['rock','paper','scissors'];
-function getComputerChoice() {
-  return choices[Math.floor(Math.random() * choices.length)];
-}
-
-function decideWinner(user, comp) {
-  if (user === comp) return 'draw';
-  if (
-    (user === 'rock' && comp === 'scissors') ||
-    (user === 'scissors' && comp === 'paper') ||
-    (user === 'paper' && comp === 'rock')
-  ) return 'user';
-  return 'computer';
-}
-
 Setup / Run
 
 Clone or download the repository.
@@ -96,25 +78,3 @@ Make sure index.html, styles.css, script.js and assets/ are in the same folder.
 Open index.html in any modern browser (Chrome, Firefox, Edge).
 
 Play!
-
-No build step required — this is pure client-side code.
-
-Tips / Enhancements you can add
-
-Add animations for selected choices.
-
-Play sound effects on win/lose/draw.
-
-Track best-of-N series (first to 5 wins).
-
-Store high score in localStorage so it persists between reloads.
-
-Add keyboard controls (R / P / S).
-
-Add accessibility labels and focus states for keyboard users.
-
-License & Credits
-
-Feel free to use and modify this project for learning or portfolio purposes.
-
-Add an open-source license file if you want (MIT recommended for small demos).
