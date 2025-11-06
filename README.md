@@ -1,4 +1,3 @@
-ChatGPT said:
 Rock — Paper — Scissors (HTML / CSS / JS)
 
 Simple browser game where a user plays Rock, Paper, Scissors against the computer. The computer randomly chooses its move; the user clicks one of three images (rock / paper / scissors). A live scoreboard shows User and Computer scores and displays the round result.
